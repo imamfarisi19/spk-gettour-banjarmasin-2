@@ -6,17 +6,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
 -->
 <html lang="en">
 <head>
-  @include('templates.head')
+  @include('admin.templates.head')
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
   <!-- Navbar -->
-  @include('templates.navbar')
+  @include('admin.templates.navbar')
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  @include('templates.sidebar')
+  @include('admin.templates.sidebar')
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -116,13 +116,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.control-sidebar -->
 
   <!-- Main Footer -->
-  @include('templates.footer')
+  @include('admin.templates.footer')
 </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-@include('templates.script')
+@include('admin.templates.script')
 </body>
 </html>
