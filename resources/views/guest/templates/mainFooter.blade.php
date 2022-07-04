@@ -1,0 +1,6 @@
+@include('guest.templates.places') 
+@include('guest.templates.featuresVideos')
+@include('guest.templates.travelCategories')
+@include('guest.templates.travellersExperiences')
+@include('guest.templates.booking')
+@include('guest.templates.footer')
