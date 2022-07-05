@@ -9,13 +9,9 @@
     <main class="main" id="top">
         @include('guest.templates.navbar')
         @include('guest.templates.form')
-        include('guest.templates.mainFooter')
+        <!-- include('guest.templates.mainFooter') -->
     </main>
-
-    <!-- =============================================== -->
-    <!--    JavaScripts -->
-    <!-- =============================================== -->
-    <!-- @include('guest.templates.script') -->
+    <!-- include('guest.templates.script') -->
 </body>
 
 </html>
