@@ -6,10 +6,10 @@
   <div class="container position-relative">
     <div class="row align-items-center min-vh-75 my-lg-4">
       <div class="col-md-7 col-lg-6 text-center text-md-start py-8">
-        <form method="POST" action="/">
-          @csrf
+        <form action="{{route('kriteria')}}" method="post">
+          {{ @csrf_field() }}
           <label for="kategori" class="form-label">Kategori Wisata : </label>
-          <input class="form-control" style="color: black" list="kategoriList" id="kategori" placeholder="Ketikan untuk mencari...">
+          <input class="form-control" style="color: black" list="kategoriList" id="kategori" name="kategori" placeholder="Ketikan untuk mencari...">
           <datalist id="kategoriList">
             <option value="Departement Store">
             <option value="Gereja">
@@ -22,7 +22,7 @@
           <br>
 
           <label for="kelurahan" class="form-label">Kelurahan Sekarang : </label>
-          <input class="form-control" style="color: black" list="kelurahanList" id="kelurahan" placeholder="Ketikan untuk mencari...">
+          <input class="form-control" style="color: black" list="kelurahanList" id="kelurahan" name="kelurahan" placeholder="Ketikan untuk mencari...">
           <datalist id="kelurahanList">
             <option value="Basirih">
             <option value="Belitung Selatan">
@@ -81,7 +81,7 @@
           </datalist>
           <br>
 
-          <input type="submit" class="btn btn-primary" value="Submit">
+          <button type="submit" class="btn btn-primary btn-block">Submit</button>
         </form>
       </div>
     </div>

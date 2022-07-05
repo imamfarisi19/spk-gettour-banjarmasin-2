@@ -16,9 +16,13 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', [GuestController::class, 'index'])->name('/');
+Route::post('/kriteria', [GuestController::class, 'kriteria'])->name('kriteria');
 
 
-Route::get('/adminLogin', [AdminController::class, 'login'])->name('adminLogin');
+Route::get('/login', [AdminController::class, 'login'])->name('login');
 Route::post('/postLogin', [AdminController::class, 'postLogin'])->name('postLogin');
-Route::get('/adminBeranda', [AdminController::class, 'index'])->name('adminBeranda');
-Route::get('/adminLogout', [AdminController::class, 'logout'])->name('adminLogout');
+Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/adminBeranda', [AdminController::class, 'index'])->name('adminBeranda');    
+});

@@ -92,7 +92,7 @@ class AdminController extends Controller
     {
         if (Auth::attempt($request->only('email', 'password')))
         {
-            return redirect('/admin/berandaAdmin');
+            return redirect('/adminBeranda');
         } 
         else
         {
@@ -103,6 +103,6 @@ class AdminController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect('/guest/beranda');
+        return redirect('/');
     }
 }
