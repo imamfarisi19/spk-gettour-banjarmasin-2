@@ -7,14 +7,8 @@
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-600" href="#featuresVideos">Video</a></li>
-                <li class="nav-item"><a class="nav-link text-600" href="#places">Destinations</a></li>
-                <li class="nav-item"><a class="nav-link text-600" href="#booking">Booking </a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
             </ul>
-            <form class="ps-lg-5">
-                <button class="btn btn-lg btn-outline-primary order-0" type="submit">Sign In</button>
-            </form>
         </div>
     </div>
 </nav>
