@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
@@ -13,7 +14,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.adminLogin');
+        return view('admin.berandaAdmin');
     }
 
     /**
@@ -82,8 +83,26 @@ class AdminController extends Controller
         //
     }
 
+    public function login()
+    {
+        return view('admin.adminLogin');
+    }
+
     public function postLogin(Request $request)
     {
-        dd($request->all());
+        if (Auth::attempt($request->only('email', 'password')))
+        {
+            return redirect('/admin/berandaAdmin');
+        } 
+        else
+        {
+            return back();
+        }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/guest/beranda');
     }
 }

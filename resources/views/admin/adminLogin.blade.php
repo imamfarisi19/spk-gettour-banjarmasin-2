@@ -27,9 +27,9 @@
                 <p class="login-box-msg">Welcome back</p>
 
                 <form action="{{route('postLogin')}}" method="post">
-                    @csrf
+                    {{ @csrf_field() }}
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="username" placeholder="Username">
+                        <input type="text" class="form-control" name="email" placeholder="Username">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <i class="fas fa-user-secret"></i>

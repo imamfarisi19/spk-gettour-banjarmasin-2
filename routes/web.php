@@ -15,6 +15,10 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', [GuestController::class, 'index']);
-Route::get('/admin-login', [AdminController::class, 'index'])->name('admin-login');
+Route::get('/', [GuestController::class, 'index'])->name('/');
+
+
+Route::get('/adminLogin', [AdminController::class, 'login'])->name('adminLogin');
 Route::post('/postLogin', [AdminController::class, 'postLogin'])->name('postLogin');
+Route::get('/adminBeranda', [AdminController::class, 'index'])->name('adminBeranda');
+Route::get('/adminLogout', [AdminController::class, 'logout'])->name('adminLogout');
