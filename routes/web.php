@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuestController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('guest.beranda');
-});
+Route::get('/', [GuestController::class, 'index']);
+Route::get('/admin-login', [AdminController::class, 'index'])->name('admin-login');
+Route::post('/postLogin', [AdminController::class, 'postLogin'])->name('postLogin');
