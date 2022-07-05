@@ -13,7 +13,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.adminLogin');
     }
 
     /**
@@ -80,5 +80,10 @@ class AdminController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function postLogin(Request $request)
+    {
+        dd($request->all());
     }
 }
