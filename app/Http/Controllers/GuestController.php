@@ -221,11 +221,16 @@ class GuestController extends Controller
         }
 
         $tempats = DB::select('select * from tempat_wisatas where kategoriWisataid = ?', [$idKategori]);
-        if($idKategori == 2)
-        {
+        if ($idKategori == 2) {
             
         }
+        $kriteriaTambahanUntukSaws = DB::select('select * from kriteria_tambahan_untuk_saws where kategoriWisataId = ?', [$idKategori]);
+        
+        return view('guest.kriteria', ['idKategori' => $idKategori, 'idKelurahan' => $idKelurahan, 'kriteriaTambahanUntukSaws' => $kriteriaTambahanUntukSaws]);
+    }
 
-        return view('guest.kriteria',[$idKategori,$idKelurahan]);
+    public function hasil(Request $request)
+    {
+        
     }
 }
