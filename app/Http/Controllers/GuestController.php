@@ -212,6 +212,7 @@ class GuestController extends Controller
         $idKategoris = DB::select('select * from kategori_wisatas where nama = ?', [$kategori]);
         foreach ($idKategoris as $value) {
             $idKategori = $value->id;
+            dd($idKategori);
         }
 
         $kelurahan = $request->kelurahan;
