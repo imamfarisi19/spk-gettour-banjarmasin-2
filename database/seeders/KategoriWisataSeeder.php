@@ -122,5 +122,32 @@ class KategoriWisataSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
+
+        DB::table('kategori_wisatas')->insert([
+            //13
+            'nama' => 'Religi',
+            'linkDirect' => false,
+            'isAktif' => true,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        DB::table('kategori_wisatas')->insert([
+            //14
+            'nama' => 'Kuliner Khas Banjar',
+            'linkDirect' => false,
+            'isAktif' => true,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
+
+        DB::table('kategori_wisatas')->insert([
+            //15
+            'nama' => 'Taman Bermain',
+            'linkDirect' => false,
+            'isAktif' => true,
+            'created_at' => now(),
+            'updated_at' => now(),
+        ]);
     }
 }
