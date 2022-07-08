@@ -9,23 +9,23 @@
         <form action="{{route('kriteria')}}" method="post">
           {{ @csrf_field() }}
           <label for="kategori" class="form-label">Kategori Wisata : </label>
-          <input class="form-control" style="color: black" list="kategoriList" id="kategori" name="kategori" placeholder="Ketikan untuk mencari...">
-          <datalist id="kategoriList">
-            <option value="Religi">
-            <option value="Kuliner Khas Banjar">
-            <option value="Taman Bermain">
-          </datalist>
+          <select class="form-select" style="color: black" name="kategori" id="kategori">
+            <option disabled>Pilih Kategori</option>
+            <option value="Religi">Religi</option>
+            <option value="Kuliner Khas Banjar">Kuliner Khas Banjar</option>
+            <option value="Taman Bermain">Taman Bermain</option>
+          </select>
           <br>
 
           <label for="kecamatan" class="form-label">Kecamatan Sekarang : </label>
-          <input class="form-control" style="color: black" list="kecamatanList" id="kecamatan" name="kecamatan" placeholder="Ketikan untuk mencari...">
-          <datalist id="kecamatanList">
-            <option value="Banjarmasin Barat">
-            <option value="Banjarmasin Selatan">
-            <option value="Banjarmasin Tengah">
-            <option value="Banjarmasin Timur">
-            <option value="Banjarmasin Utara">
-          </datalist>
+          <select class="form-select" style="color: black" name="kecamatan" id="kecamatan">
+            <option disabled>Pilih Kecamatan</option>
+            <option value="Banjarmasin Barat">Banjarmasin Barat</option>
+            <option value="Banjarmasin Selatan">Banjarmasin Selatan</option>
+            <option value="Banjarmasin Tengah">Banjarmasin Tengah</option>
+            <option value="Banjarmasin Timur">Banjarmasin Timur</option>
+            <option value="Banjarmasin Utara">Banjarmasin Utara</option>
+          </select>
           <br>
 
           <button type="submit" class="btn btn-primary btn-block">Submit</button>
