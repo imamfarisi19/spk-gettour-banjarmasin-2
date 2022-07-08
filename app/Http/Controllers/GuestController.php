@@ -207,31 +207,45 @@ class GuestController extends Controller
     public function kriteria(Request $request)
     {
         $kategori = $request->kategori;
-        $kelurahan = $request->kelurahan;
+        $kecamatan = $request->kecamatan;
+        $idKategori = '';
+        $idKecamatan = '';
+        $a = '';
+        $b = '';
+        $c = '';
+        $arr = array();
+        $arr1 = array();
 
         $idKategoris = DB::select('select * from kategori_wisatas where nama = ?', [$kategori]);
         foreach ($idKategoris as $value) {
             $idKategori = $value->id;
-            dd($idKategori);
         }
 
-        $kelurahan = $request->kelurahan;
-        $idKelurahans = DB::select('select * from kelurahans where nama = ?', [$kelurahan]);
-        foreach ($idKelurahans as $value) {
-            $idKelurahan = $value->id;
+        $idKecamatans = DB::select('select * from kecamatans where nama = ?', [$kecamatan]);
+        foreach ($idKecamatans as $value) {
+            $idKecamatan = $value->id;
         }
 
-        $tempats = DB::select('select * from tempat_wisatas where kategoriWisataid = ?', [$idKategori]);
-        if ($idKategori == 2) {
-            
-        }
         $kriteriaTambahanUntukSaws = DB::select('select * from kriteria_tambahan_untuk_saws where kategoriWisataId = ?', [$idKategori]);
-        
-        return view('guest.kriteria', ['idKategori' => $idKategori, 'idKelurahan' => $idKelurahan, 'kriteriaTambahanUntukSaws' => $kriteriaTambahanUntukSaws]);
+        foreach ($kriteriaTambahanUntukSaws as $value) {
+            array_push($arr, $value->id);
+            array_push($arr1, $value->penjelasan);
+        }
+        foreach ($kriteriaTambahanUntukSaws as $value) {
+            if ($value->id == $arr[0]) {
+                $a = $value->penjelasan;
+            } else if ($value->id == $arr[1]) {
+                $b = $value->penjelasan;
+            } else {
+                $c = $value->penjelasan;
+            }
+        }
+
+        return view('guest.kriteria', ['idKategori' => $idKategori, 'idKecamatan' => $idKecamatan, 'a' => $a, 'b' => $b, 'c' => $c]);
     }
 
     public function hasil(Request $request)
     {
-        
+        dd($request);
     }
 }
