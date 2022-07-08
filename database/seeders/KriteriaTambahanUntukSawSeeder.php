@@ -374,5 +374,96 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
             'created_at'=>now(),
             'updated_at'=>now(),
         ]);
+
+        DB::table('kriteria_tambahan_untuk_saws')->insert([
+            //37
+            'kategoriWisataId' => '13',
+            'penjelasan' => 'Memiliki Tokoh',
+            'isBenefit'=>true,
+            'bobot'=>1,
+            'created_at'=>now(),
+            'updated_at'=>now(),
+        ]);
+
+        DB::table('kriteria_tambahan_untuk_saws')->insert([
+            //38
+            'kategoriWisataId' => '13',
+            'penjelasan' => 'Nilai Sejarah',
+            'isBenefit'=>true,
+            'bobot'=>2,
+            'created_at'=>now(),
+            'updated_at'=>now(),
+        ]);
+
+        DB::table('kriteria_tambahan_untuk_saws')->insert([
+            //39
+            'kategoriWisataId' => '13',
+            'penjelasan' => 'Kebersihan dan Keamanan',
+            'isBenefit'=>true,
+            'bobot'=>3,
+            'created_at'=>now(),
+            'updated_at'=>now(),
+        ]);
+
+        DB::table('kriteria_tambahan_untuk_saws')->insert([
+            //40
+            'kategoriWisataId' => '14',
+            'penjelasan' => 'Cepat Saji',
+            'isBenefit'=>true,
+            'bobot'=>2,
+            'created_at'=>now(),
+            'updated_at'=>now(),
+        ]);
+
+        DB::table('kriteria_tambahan_untuk_saws')->insert([
+            //41
+            'kategoriWisataId' => '14',
+            'penjelasan' => 'Memiliki Menu Terkenal',
+            'isBenefit'=>true,
+            'bobot'=>1,
+            'created_at'=>now(),
+            'updated_at'=>now(),
+        ]);
+
+        DB::table('kriteria_tambahan_untuk_saws')->insert([
+            //42
+            'kategoriWisataId' => '14',
+            'penjelasan' => 'Kebersihan dan Keamanan',
+            'isBenefit'=>true,
+            'bobot'=>3,
+            'created_at'=>now(),
+            'updated_at'=>now(),
+        ]);
+
+        DB::table('kriteria_tambahan_untuk_saws')->insert([
+            //43
+            'kategoriWisataId' => '15',
+            'penjelasan' => 'Macam - macam wahana permainan',
+            'isBenefit'=>true,
+            'bobot'=>2,
+            'created_at'=>now(),
+            'updated_at'=>now(),
+        ]);
+
+        DB::table('kriteria_tambahan_untuk_saws')->insert([
+            //44
+            'kategoriWisataId' => '15',
+            'penjelasan' => 'Nilai Sejarah',
+            'isBenefit'=>true,
+            'bobot'=>1,
+            'created_at'=>now(),
+            'updated_at'=>now(),
+        ]);
+
+        DB::table('kriteria_tambahan_untuk_saws')->insert([
+            //45
+            'kategoriWisataId' => '15',
+            'penjelasan' => 'Kebersihan dan Keamanan',
+            'isBenefit'=>true,
+            'bobot'=>3,
+            'created_at'=>now(),
+            'updated_at'=>now(),
+        ]);
+        
     }
 }
