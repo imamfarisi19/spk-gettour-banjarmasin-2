@@ -157,15 +157,14 @@ class GuestController extends Controller
            2. Area Parkir
            3. Tambahan Khusus 1
            4. Tambahan Khusus 2 
-           5. Tambahan Khusus 3
-           6. Tambahan Khusus 4
+           5. Tambahan Khusus 3           
          */
-        $isKeuntungan = [False, False, True, True, True];
+        $isKeuntungan = [False, True, True, True, True];
 
         // Matriks bobot
         /* Apabila jumlah bobot tidak sama dengan 
            1, lakukan NormalisasiBobot */
-        $Wx = [4, 3, 2, 1];
+        $Wx = [5, 4, 3, 2, 1];
         $W = NormalisasiBobot($Wx);
 
         // Matrik Alternatif
@@ -246,6 +245,8 @@ class GuestController extends Controller
 
     public function hasil(Request $request)
     {
-        dd($request);
+        
+        return view('guest.hasil');
     }
+
 }
