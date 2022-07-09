@@ -9,81 +9,53 @@
         <form method="post" action="{{route('hasil')}}">
           {{ @csrf_field() }}
 
-          <label for="kategori" class="form-label">Kategori Wisata : </label>
-          <select class="form-select" style="color: black" name="kategori" id="kategori">
-            <option disabled>Pilih Kategori</option>
-            <option value="Religi">Religi</option>
-            <option value="Kuliner Khas Banjar">Kuliner Khas Banjar</option>
-            <option value="Taman Bermain">Taman Bermain</option>
+          <label for="jarak" class="form-label">Jarak Ke Tempat Wisata : </label>
+          <select class="form-select" style="color: black" name="jarak" id="jarak">
+            <option disabled>Seberapa jauh jarak ke tempat wisata yang anda inginkan</option>
+            <option value="1">0 - 5,9 KM</option>
+            <option value="2" selected>6 - 15,9 KM</option>
+            <option value="3">lebih dari 16 KM</option>
           </select>
           <br>
-          
-          <label for="jarak" class="form-label">Jarak dari kecamatan sekarang : </label>
-          <br>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="jarak" id="inlineRadio1" value="1">
-            <label class="form-check-label" for="inlineRadio1"><= 5,9 KM</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="jarak" id="inlineRadio2" value="2" checked>
-            <label class="form-check-label" for="inlineRadio2">6 - 15,9 KM</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="jarak" id="inlineRadio3" value="3">
-            <label class="form-check-label" for="inlineRadio3">>= 16 KM</label>
-          </div>
-          <br><br>
 
-          <label for="area parkir" class="form-label">Area Parkir : </label>
-          <br>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="area parkir" id="inlineRadio4" value="1">
-            <label class="form-check-label" for="inlineRadio4">Tidak Ada Area Parkir</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="area parkir" id="inlineRadio5" value="2" checked>
-            <label class="form-check-label" for="inlineRadio5">Bisa Parkir Sepeda Motor</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="area parkir" id="inlineRadio6" value="3">
-            <label class="form-check-label" for="inlineRadio6">Bisa Parkir Mobil</label>
-          </div>
-
-          <label for="kelurahan" class="form-label">Area parkir : </label>
-          <input class="form-control" style="color: black" list="kelurahanList" id="kelurahan" placeholder="Ketikan untuk mencari...">
-          <datalist id="kelurahanList">
-            <option value="Bisa parkir mobil">
-            <option value="Bisa parkir sepeda motor">
-            <option value="Tidak ada area">
-          </datalist>
+          <label for="areaParkir" class="form-label">Area Parkir : </label>
+          <select class="form-select" style="color: black" name="areaParkir" id="areaParkir">
+            <option disabled>Bagaimana area parkir yang anda perlukan</option>
+            <option value="1">Tidak ada area parkir</option>
+            <option value="2" selected>Bisa parkir sepeda motor</option>
+            <option value="3">Bisa parkir mobil</option>
+          </select>
           <br>
 
           <label for="kriteriaKhusus1" class="form-label">{{ $a }} : </label>
-          <input class="form-control" style="color: black" list="kriteriaKhusus1List" id="kriteriaKhusus1" placeholder="Ketikan untuk mencari...">
-          <datalist id="kriteriaKhusus1List">
-            <option value="sangat penting">
-            <option value="mungkin penting">
-            <option value="kurang penting">
-          </datalist>
+          <select class="form-select" style="color: black" name="kriteriaKhusus1" id="kriteriaKhusus1">
+            <option disabled>Seberapa perlu kriteria ini bagi anda</option>
+            <option value="1">Sangat penting</option>
+            <option value="2" selected>Mungkin penting</option>
+            <option value="3">Kurang penting</option>
+          </select>
           <br>
 
           <label for="kriteriaKhusus2" class="form-label">{{ $b }} : </label>
-          <input class="form-control" style="color: black" list="kriteriaKhusus2List" id="kriteriaKhusus2" placeholder="Ketikan untuk mencari...">
-          <datalist id="kriteriaKhusus2List">
-            <option value="sangat penting">
-            <option value="mungkin penting">
-            <option value="kurang penting">
-          </datalist>
+          <select class="form-select" style="color: black" name="kriteriaKhusus2" id="kriteriaKhusus2">
+            <option disabled>Seberapa perlu kriteria ini bagi anda</option>
+            <option value="1">Sangat penting</option>
+            <option value="2" selected>Mungkin penting</option>
+            <option value="3">Kurang penting</option>
+          </select>
           <br>
 
           <label for="kriteriaKhusus3" class="form-label">{{ $c }} : </label>
-          <input class="form-control" style="color: black" list="kriteriaKhusus3List" id="kriteriaKhusus3" placeholder="Ketikan untuk mencari...">
-          <datalist id="kriteriaKhusus3List">
-            <option value="sangat penting">
-            <option value="mungkin penting">
-            <option value="kurang penting">
-          </datalist>
+          <select class="form-select" style="color: black" name="kriteriaKhusus3" id="kriteriaKhusus3">
+            <option disabled>Seberapa perlu kriteria ini bagi anda</option>
+            <option value="1">Sangat penting</option>
+            <option value="2" selected>Mungkin penting</option>
+            <option value="3">Kurang peting</option>
+          </select>
           <br>
+
+          <input type="hidden" class="form-control" value="{{$idKategori}}" id="idKategori" name="idKategori">
+          <input type="hidden" class="form-control" value="{{$idKecamatan}}" id="idKecamatan" name="idKecamatan">
 
           <input type="submit" class="btn btn-primary" value="Submit">
         </form>
