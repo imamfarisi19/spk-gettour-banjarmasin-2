@@ -8,7 +8,7 @@
 <body>
     <main class="main" id="top">
         @include('guest.templates.navbar')
-        <!-- include('guest.templates.form2') -->
+        @include('guest.templates.form3')
         <!-- include('guest.templates.mainFooter') -->
     </main>
     <!-- include('guest.templates.script') -->
