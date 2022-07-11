@@ -1,5 +1,5 @@
 <section class="py-0">
-  <div class="bg-holder d-none d-md-block" style="background-image:url('rhea/public/assets/img/illustrations/form.png');background-position:right bottom;background-size:auto;">
+  <div class="bg-holder d-none d-md-block" style="background-image:url('rhea/public/assets/img/illustrations/form.png');background-position:right;background-size:auto;">
   </div>
   <!--/.bg-holder-->
 
