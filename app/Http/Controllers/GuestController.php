@@ -245,7 +245,6 @@ class GuestController extends Controller
 
     public function hasil(Request $request)
     {
-        
         return view('guest.hasil');
     }
 
