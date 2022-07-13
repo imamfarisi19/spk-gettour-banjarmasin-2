@@ -33,5 +33,5 @@
 <!-- ===============================================-->
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
-<link rel="stylesheet" type="text/css" href="{{asset('../style.css')}}" />
-<script type="module" src="{{asset('../index.js')}}"></script>
+<link rel="stylesheet" type="text/css" href="{{asset('./rhea/style3.css')}}" />
+<script type="module" src="{{asset('./rhea/index3.js')}}"></script>

@@ -7,7 +7,7 @@
 
 <body>
     <main class="main" id="top">
-        @include('guest.templates.navbar')
+        @include('guest.templates.navbar') 
         @include('guest.templates.form3')
         <!-- include('guest.templates.mainFooter') -->
     </main>
