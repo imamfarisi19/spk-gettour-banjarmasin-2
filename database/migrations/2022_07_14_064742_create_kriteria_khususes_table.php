@@ -13,16 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tempat_wisatas', function (Blueprint $table) {
+        Schema::create('kriteria_khususes', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->boolean('isAktif');
-            $table->string('linkInternet');
-            $table->integer('kategoriWisataId');
-            $table->integer('kelurahanId');
-            $table->double('latitude');
-            $table->double('longitude');
-            $table->text('deskripsi');
+            $table->integer('tempatWisataId');
+            $table->double('kriteriaKhusus1');
+            $table->double('kriteriaKhusus2');
+            $table->double('kriteriaKhusus3');
             $table->timestamps();
         });
     }
@@ -34,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tempat_wisatas');
+        Schema::dropIfExists('kriteria_khususes');
     }
 };

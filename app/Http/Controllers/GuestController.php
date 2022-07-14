@@ -240,7 +240,7 @@ class GuestController extends Controller
         $W = $this->NormalisasiBobot($Wx);
 
         $tempatWisata = DB::select('select * from tempat_wisatas where kategoriWisataId = ?', [intval($idKategori)]);
-        //dd($tempatWisata);
+        // dd($tempatWisata);
 
         // for ($i = 0; $i < sizeof($tempatWisata); $i++) {
         //     array_push($jaraks ,DB::table('kriteria_umum_jaraks')
@@ -542,55 +542,69 @@ class GuestController extends Controller
         $Y = array();
 
         $y = DB::table('kriteria_tambahan_untuk_saws')->where('kategoriWisataId', '=', intval($idKategori))->get();
-        //dd($y);
+
+        $O = array();
+        foreach ($arr6 as $value) {
+            $o = DB::select('select * from kriteria_khususes where id = ?', [$value]);
+            array_push($O, $o);
+        }
+
+        $L = array();
+        foreach ($arr6 as $value) {
+            $l = DB::select('select * from kriteria_umum_area_parkirs where id = ?', [$value]);
+            array_push($L, $l);
+        }
 
         // Matrik Alternatif
         if ($idKecamatan != null) {
             if ($idKecamatan == 1) {
                 for ($i = 0; $i < sizeof($q[0]); $i++) {
-                    array_push($Y, $q[0][$i], $y[0]->bobot, $y[0]->bobot, $y[1]->bobot, $y[2]->bobot);
+                    array_push($Y, $q[0][$i], $L[$i][0]->bobot, $O[$i][0]->kriteriaKhusus1, $O[$i][0]->kriteriaKhusus2, $O[$i][0]->kriteriaKhusus3);
                     array_push($X, $Y);
                     unset($Y);
                     $Y = array();
                 }
             } else if ($idKecamatan == 2) {
                 for ($i = 0; $i < sizeof($q[0]); $i++) {
-                    array_push($Y, $q[0][$i], $y[0]->bobot, $y[0]->bobot, $y[1]->bobot, $y[2]->bobot);
+                    array_push($Y, $q[0][$i], $y[0]->bobot, $O[$i][0]->kriteriaKhusus1, $O[$i][0]->kriteriaKhusus2, $O[$i][0]->kriteriaKhusus3);
                     array_push($X, $Y);
                     unset($Y);
                     $Y = array();
                 }
             } else if ($idKecamatan == 3) {
                 for ($i = 0; $i < sizeof($q[0]); $i++) {
-                    array_push($Y, $q[0][$i], $y[0]->bobot, $y[0]->bobot, $y[1]->bobot, $y[2]->bobot);
+                    array_push($Y, $q[0][$i], $y[0]->bobot, $O[$i][0]->kriteriaKhusus1, $O[$i][0]->kriteriaKhusus2, $O[$i][0]->kriteriaKhusus3);
                     array_push($X, $Y);
                     unset($Y);
                     $Y = array();
                 }
             } else if ($idKecamatan == 4) {
                 for ($i = 0; $i < sizeof($q[0]); $i++) {
-                    array_push($Y, $q[0][$i], $y[0]->bobot, $y[0]->bobot, $y[1]->bobot, $y[2]->bobot);
+                    array_push($Y, $q[0][$i], $y[0]->bobot, $O[$i][0]->kriteriaKhusus1, $O[$i][0]->kriteriaKhusus2, $O[$i][0]->kriteriaKhusus3);
                     array_push($X, $Y);
                     unset($Y);
                     $Y = array();
                 }
             } else {
                 for ($i = 0; $i < sizeof($q[0]); $i++) {
-                    array_push($Y, $q[0][$i], $y[0]->bobot, $y[0]->bobot, $y[1]->bobot, $y[2]->bobot);
+                    array_push($Y, $q[0][$i], $y[0]->bobot, $O[$i][0]->kriteriaKhusus1, $O[$i][0]->kriteriaKhusus2, $O[$i][0]->kriteriaKhusus3);
                     array_push($X, $Y);
                     unset($Y);
                     $Y = array();
                 }
             }
         }
-        
+
         // Matriks X ternomalisasi
         $R = $this->MatriksNormalisasi($X, $isKeuntungan);
 
         // Matriks Peringkat Alternative
-        $A = $this->Peringkat($R, $W);
+        $Peringkat = $this->Peringkat($R, $W);
 
-        arsort($A); // Sort an array in descending order and maintain index association
+        arsort($Peringkat); // Sort an array in descending order and maintain index association
+
+        $A = array();
+        array_push($A, $Peringkat, $tempatWisata);
 
         return $A;
     }
@@ -668,29 +682,49 @@ class GuestController extends Controller
         array_push($bobot, $request->kriteriaKhusus1);
         array_push($bobot, $request->kriteriaKhusus2);
         array_push($bobot, $request->kriteriaKhusus3);
+
         $SAW = $this->semiMain($bobot, $idKategori, $idKecamatan);
-        $ksaw = array_keys($SAW);
+        $SAWHasil = $SAW[0];
+        $SAWTempat = $SAW[1];
+
+        $ksaw = array_keys($SAWHasil);
 
         $arrIdTempat = array();
         foreach ($ksaw as $value) {
-            $a = $value + 1;
+            $a = $value + 0;
             array_push($arrIdTempat, $a);
         }
-        $hasil = $arrIdTempat;
-        //array_slice($arrIdTempat, 0, 10, true);
 
-        //dd($hasil);
+        $hasil = array_slice($arrIdTempat, 0, 5, true);;
+
         $tempat = array();
         $tempatFix = array();
-        for ($i = 0; $i < sizeof($hasil); $i++) {
-            $tempat = DB::table('tempat_wisatas')->where('id', '=', $hasil[$i])->where('kategoriWisataId', '=', intval($idKategori))->get();
 
-            array_push($tempatFix, $tempat);
-            //array_push($tempat, DB::select('select * from tempat_wisatas where id = ?', [$hasil[$i]]));
+        $u = array_keys($SAWTempat);
+
+        for ($i = 0; $i < sizeof($hasil); $i++) {
+            for ($j = 0; $j < sizeof($u); $j++) {
+                if ($hasil[$i] == $u[$j]) {
+                    $g = $SAWTempat[$j];
+                    array_push($tempatFix, $g);
+                }
+            }
         }
 
-        
-        dd($tempatFix);
-        return view('guest.hasil', ['tempat' => $tempat, 'idKecamatan' => $idKecamatan]);
+        $K = DB::select('select * from kecamatans where id = ?', [intval($idKecamatan)]);
+
+        return view('guest.hasil', ['tempatFix' => $tempatFix, 'K' => $K]);
+    }
+
+    public function detail()
+    {
+        $selected_category = $_GET['category']; // Get 'Table'
+        session_start();
+        $_SESSION['selected_category'] = $_GET['category'];
+
+        $selected_category;
+        $r = DB::select('select * from tempat_wisatas where id = ?', [$selected_category]);
+
+        return view('guest.detail',['r' => $r]);
     }
 }

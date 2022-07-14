@@ -12,9 +12,9 @@
           <label for="jarak" class="form-label">Jarak Ke Tempat Wisata : </label>
           <select class="form-select" style="color: black" name="jarak" id="jarak">
             <option disabled>Seberapa jauh jarak ke tempat wisata yang anda inginkan</option>
-            <option value="1">0 - 5,9 KM</option>
-            <option value="2" selected>6 - 15,9 KM</option>
-            <option value="3">lebih dari 16 KM</option>
+            <option value="1">Dekat</option>
+            <option value="2" selected>Sedang</option>
+            <option value="3">Jauh</option>
           </select>
           <br>
 
@@ -22,8 +22,8 @@
           <select class="form-select" style="color: black" name="areaParkir" id="areaParkir">
             <option disabled>Bagaimana area parkir yang anda perlukan</option>
             <option value="1">Tidak ada area parkir</option>
-            <option value="2" selected>Bisa parkir sepeda motor</option>
-            <option value="3">Bisa parkir mobil</option>
+            <option value="2" selected>area parki kecil</option>
+            <option value="3">area parkir luas</option>
           </select>
           <br>
 

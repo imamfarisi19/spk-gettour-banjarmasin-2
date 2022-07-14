@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\kriteriaKhusus;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -29,5 +30,6 @@ class DatabaseSeeder extends Seeder
         $this->call(KecamatanSeeder::class);
         $this->call(KategoriWisataSeeder::class);
         $this->call(UserSeeder::class);
+        $this->call(KriteriaKhususSeeder::class);
     }
 }

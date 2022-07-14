@@ -18,7 +18,7 @@ use App\Http\Controllers\AdminController;
 Route::get('/', [GuestController::class, 'index'])->name('/');
 Route::post('/kriteria', [GuestController::class, 'kriteria'])->name('kriteria');
 Route::post('/hasil', [GuestController::class, 'hasil'])->name('hasil');
-
+Route::get('/detail', [GuestController::class, 'detail'])->name('detail');
 
 Route::get('/login', [AdminController::class, 'login'])->name('login');
 Route::post('/postLogin', [AdminController::class, 'postLogin'])->name('postLogin');
