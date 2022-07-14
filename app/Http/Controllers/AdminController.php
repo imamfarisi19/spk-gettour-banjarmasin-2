@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
@@ -14,7 +15,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.berandaAdmin');
+        $s = DB::select('select * from tempat_wisatas');
+        return view('admin.berandaAdmin', ['s' => $s]);
     }
 
     /**
@@ -90,12 +92,9 @@ class AdminController extends Controller
 
     public function postLogin(Request $request)
     {
-        if (Auth::attempt($request->only('email', 'password')))
-        {
+        if (Auth::attempt($request->only('email', 'password'))) {
             return redirect('/adminBeranda');
-        } 
-        else
-        {
+        } else {
             return back();
         }
     }
