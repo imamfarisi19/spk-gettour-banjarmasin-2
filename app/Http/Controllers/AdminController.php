@@ -16,7 +16,10 @@ class AdminController extends Controller
     public function index()
     {
         $s = DB::select('select * from tempat_wisatas');
-        return view('admin.berandaAdmin', ['s' => $s]);
+        $k = DB::select('select * from kecamatans');
+        $w = DB::select('select * from kategori_wisatas');
+        $r = DB::select('select * from kelurahans');
+        return view('admin.berandaAdmin', ['s' => $s, 'k' => $k, 'w' => $w, 'r' => $r]);
     }
 
     /**
@@ -103,5 +106,11 @@ class AdminController extends Controller
     {
         Auth::logout();
         return redirect('/');
+    }
+
+    public function tempatWisata(Request $request)
+    {
+        
+        return view('admin.berandaAdmin');
     }
 }

@@ -23,7 +23,9 @@ Route::get('/detail', [GuestController::class, 'detail'])->name('detail');
 Route::get('/login', [AdminController::class, 'login'])->name('login');
 Route::post('/postLogin', [AdminController::class, 'postLogin'])->name('postLogin');
 Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
+Route::get('/kecamatan', [AdminController::class, 'kecamatan'])->name('kecamatan');
 
-Route::group(['middleware' => ['auth']], function() {
-    Route::get('/adminBeranda', [AdminController::class, 'index'])->name('adminBeranda');    
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/adminBeranda', [AdminController::class, 'index'])->name('adminBeranda');
+    Route::post('/tempatWisata', [AdminController::class, 'tempatWisata'])->name('tempatWisata');
 });

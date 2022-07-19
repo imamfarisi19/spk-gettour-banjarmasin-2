@@ -25,7 +25,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 47,
             'latitude' => -3.2943389616915900,
             'longitude' => 114.5761158791220000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Masjid Sultan Suriansyah atau Masjid Kuin adalah sebuah masjid bersejarah di Kota Banjarmasin yang merupakan masjid tertua di Kalimantan Selatan. Masjid ini dibangun pada masa pemerintahan Sultan Suriansyah (1526-1550), Raja Banjar pertama yang memeluk agama Islam. Masjid Kuin merupakan salah satu dari tiga masjid tertua yang ada di kota Banjarmasin pada masa Mufti Jamaluddin (Mufti Banjarmasin), masjid yang lainnya adalah Masjid Besar (cikal bakal Masjid Jami Banjarmasin) dan Masjid Basirih. Masjid ini terletak di Jalan Kuin Utara, Kelurahan Kuin Utara, kawasan yang dikenal sebagai Banjar Lama merupakan situs ibu kota Kesultanan Banjar yang pertama kali. Masjid ini letaknya berdekatan dengan komplek makam Sultan Suriansyah dan di tepian kiri sungai Kuin.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -39,7 +39,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 50,
             'latitude' => -3.3066485950888900,
             'longitude' => 114.5953640785110000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Masjid Jami Banjarmasin atau dikenal juga sebagai Masjid Jami Sungai Jingah adalah sebuah masjid bersejarah di kota Banjarmasin, Kalimantan Selatan. Mesjid berarsitektur Banjar dan kolonial (indish) yang dibuat dengan bahan dasar kayu ulin ini dibangun pada tahun 1777.[1] Walaupun termasuk di lingkungan Kelurahan Antasan Kecil Timur, masjid yang seluruh konstruksi bangunan didominasi kayu besi alias kayu ulin ini lebih identik dikenal Masjid Jami Sungai Jingah. Lokasi awal pembangunan masjid ialah di tepi Sungai Martapura, setelah masjid ini dipindahkan sekarang berada di Jalan Masjid kelurahan Antasan Kecil Timur, Kota Banjarmasin pada tahun 1934.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -53,7 +53,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 22,
             'latitude' => -3.3189530391178700,
             'longitude' => 114.5912444496770000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Masjid Raya Sabilal Muhtadin adalah sebuah masjid besar yang berada di Kota Banjarmasin, Kalimantan Selatan, Indonesia, tepatnya di kelurahan Antasan Besar, kecamatan Banjarmasin Tengah. Di dalam kompleks mini juga terdapat kantor MUI Kalimantan Selatan. Masjid ini dibangun di tepi barat sungai Martapura dan dibangun pada tahun 1981. Sabilal Muhtadin, nama pilihan untuk Mesjid Raya Kota Banjarmasin ini, diambil dari nama kitab fiqih Sabilal Muhtadin karangan Ulama Besar alm. Syekh Muhammad Arsyad al-Banjari (1710—1812) yang selama hidupnya memperdalam dan mengembangkan agama Islam di Kesultanan Banjar atau Kalimantan Selatan sekarang ini. Ulama Besar ini tidak saja dikenal di seluruh Nusantara, akan tetapi dikenal dan dihormati melewati batas negerinya sampai ke Malaka, Filipina, Bombay, Mekkah, Madinah, Istambul dan Mesir.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -67,7 +67,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 33,
             'latitude' => -3.3178586502910500,
             'longitude' => 114.5774365410840000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Alamat: MHJG+VX3, Tlk. Dalam, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70116',
             'created_at' => now(),
             'updated_at' => now(),
         ]);

@@ -695,7 +695,7 @@ class GuestController extends Controller
             array_push($arrIdTempat, $a);
         }
 
-        $hasil = array_slice($arrIdTempat, 0, 5, true);;
+        $hasil = array_slice($arrIdTempat, 0, 5, true);
 
         $tempat = array();
         $tempatFix = array();
@@ -725,6 +725,6 @@ class GuestController extends Controller
         $selected_category;
         $r = DB::select('select * from tempat_wisatas where id = ?', [$selected_category]);
 
-        return view('guest.detail',['r' => $r]);
+        return view('guest.detail', ['r' => $r]);
     }
 }

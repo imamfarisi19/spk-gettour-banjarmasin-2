@@ -29,7 +29,7 @@
             </p>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item menu-open">
           <a href="{{route('kecamatan')}}" class="nav-link">
             <i class="nav-icon fas fa-table"></i>
             <p>
@@ -75,22 +75,7 @@
             </tr>
           </thead>
           <tbody>
-            @foreach($k as $value)
-            <tr>
-              <th scope="row">{{$value->id}}</th>
-              <td style="word-wrap: break-word;min-width: 60px;max-width: 60px;">{{$value->nama}}</td>
-              <td>{{$value->latitude}}</td>
-              <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;">{{$value->longitude}}</td>
-              <td>
-                <div class="d-grid gap-4">
-                  <button class="btn btn-outline-primary" type="button">aktivasi</button>
-                  <button class="btn btn-outline-success" type="button " data-toggle="modal" data-target="#modalTambah">tambah</button>
-                  <button class="btn btn-outline-warning" type="button">ubah</button>
-                  <button class="btn btn-outline-danger" type="button">hapus</button>
-                </div>
-              </td>
-            </tr>
-            @endforeach
+
           </tbody>
         </table>
       </div>
