@@ -5,62 +5,35 @@
       <div class="col-md-7 col-lg-6 text-center text-md-start py-8">
         <form method="post" action="{{route('tempatWisata')}}">
           {{ @csrf_field() }}
-
-          <input type="text" id="tempatWisatNama" name="tempatWisatNama" class="form-control">
+          <span>Nama</span>
+          <input type="text" id="tempatWisataNama" name="tempatWisataNama" class="form-control">
           <br>
-          <input type="text" id="tempatWisatNama" name="tempatWisatNama" class="form-control">
+          <span>Link titik google map</span>
+          <input type="text" id="tempatWisataLink" name="tempatWisataLink" class="form-control">
           <br>
-          <input type="text" id="tempatWisatNama" name="tempatWisatNama" class="form-control">
+          <label for="tempatWisataKategori" class="form-label">kategori wisata : </label>
           <br>
-          <input type="text" id="tempatWisatNama" name="tempatWisatNama" class="form-control">
-          <br>
-          <input type="text" id="tempatWisatNama" name="tempatWisatNama" class="form-control">
-          <br>
-          <input type="text" id="tempatWisatNama" name="tempatWisatNama" class="form-control">
-          <br>
-          <label for="jarak" class="form-label">Jarak Ke Tempat Wisata : </label>
-          <select class="form-select" style="color: black" name="jarak" id="jarak">
-            <option disabled>Seberapa jauh jarak ke tempat wisata yang anda inginkan</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
+          <select class="form-select" style="color: black" name="tempatWisataKategori" id="tempatWisataKategori">
+            <option disabled>Kategori Wisata</option>
+            <option value="13" selected>Religi</option>
+            <option value="14">Kuliner Khas Banjar</option>
+            <option value="15">Taman Bermain</option>
           </select>
           <br>
-
-          <label for="areaParkir" class="form-label">Area Parkir : </label>
-          <select class="form-select" style="color: black" name="areaParkir" id="areaParkir">
-            <option disabled>Bagaimana area parkir yang anda perlukan</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
-          </select>
+          <span>Kelurahan</span>
+          <input type="text" id="tempatWisataKelurahan" name="tempatWisataKelurahan" class="form-control">
           <br>
-
-          <label for="kriteriaKhusus1" class="form-label"> : </label>
-          <select class="form-select" style="color: black" name="kriteriaKhusus1" id="kriteriaKhusus1">
-            <option disabled>Seberapa perlu kriteria ini bagi anda</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
-          </select>
+          <span>Latitude</span>
+          <input type="number" id="tempatWisataLatitude" name="tempatWisataLatitude" class="form-control">
           <br>
-
-          <label for="kriteriaKhusus2" class="form-label"> : </label>
-          <select class="form-select" style="color: black" name="kriteriaKhusus2" id="kriteriaKhusus2">
-            <option disabled>Seberapa perlu kriteria ini bagi anda</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
-          </select>
+          <span>Longitude</span>
+          <input type="number" id="tempatWisataLongitude" name="tempatWisataLongitude" class="form-control">
           <br>
-
-          <label for="kriteriaKhusus3" class="form-label"> : </label>
-          <select class="form-select" style="color: black" name="kriteriaKhusus3" id="kriteriaKhusus3">
-            <option disabled>Seberapa perlu kriteria ini bagi anda</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
-          </select>
+          <label for="tempatWisataDeskripsi">Deskripsi</label>
+          <br>
+          <textarea id="tempatWisataDeskripsi" name="tempatWisataDeskripsi" rows="3" cols="55">
+          </textarea>
+          <br>
           <br>
           <input type="submit" class="btn btn-primary" value="Submit">
         </form>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\AdminController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,7 @@ Route::get('/login', [AdminController::class, 'login'])->name('login');
 Route::post('/postLogin', [AdminController::class, 'postLogin'])->name('postLogin');
 Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
 Route::get('/kecamatan', [AdminController::class, 'kecamatan'])->name('kecamatan');
+Route::get('/coba1', [AdminController::class, 'coba1'])->name('coba1');
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/adminBeranda', [AdminController::class, 'index'])->name('adminBeranda');

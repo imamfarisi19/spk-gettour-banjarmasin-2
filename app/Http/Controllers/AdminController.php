@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use App\Models\TempatWisata;
 
 class AdminController extends Controller
 {
@@ -19,6 +20,7 @@ class AdminController extends Controller
         $k = DB::select('select * from kecamatans');
         $w = DB::select('select * from kategori_wisatas');
         $r = DB::select('select * from kelurahans');
+
         return view('admin.berandaAdmin', ['s' => $s, 'k' => $k, 'w' => $w, 'r' => $r]);
     }
 
@@ -110,7 +112,18 @@ class AdminController extends Controller
 
     public function tempatWisata(Request $request)
     {
+        $s = DB::select('select * from tempat_wisatas');
+        $k = DB::select('select * from kecamatans');
+        $w = DB::select('select * from kategori_wisatas');
+        $r = DB::select('select * from kelurahans');
         
-        return view('admin.berandaAdmin');
+        $t = DB::insert('insert into tempat_wisatas (id, nama, isAktif, linkInternet, kategoriWisataId, kelurahanId, latitude, longitude, deskripsi) values (?, ?, ?, ?, ?, ?, ?, ?, ?)', [51, $request->tempatWisataNama, true, $request->tempatWisataLink, $request->tempatWisataKategori, $request->tempatWisataKelurahan, $request->tempatWisataLatitude, $request->tempatWisataLongitude, $request->tempatWisataDeskripsi]);
+        return view('admin.berandaAdmin', ['s' => $s, 'k' => $k, 'w' => $w, 'r' => $r]);
+    }
+
+    public function coba1()
+    {
+        $x = TempatWisata::all();
+        return $x;
     }
 }
