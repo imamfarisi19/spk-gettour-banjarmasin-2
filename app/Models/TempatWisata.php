@@ -11,6 +11,31 @@ class TempatWisata extends Model
 
     public function tempatWisataKelurahan()
     {
-        return $this->hasMany(Kelurahan::class, 'kelurahanId', 'id');
+        return $this->hasMany(TempatWisata::class, 'kelurahanId', 'id');
+    }
+
+    public function tempatWisataKategori()
+    {
+        return $this->hasMany(TempatWisata::class, 'KategoriWisataId', 'id');
+    }
+
+    public function tempatWisataJarak()
+    {
+        return $this->hasOne(TempateWisata::class, 'id', 'id');
+    }
+
+    public function tempatWisataParkir()
+    {
+        return $this->hasOne(TempatWisata::class, 'id', 'id');
+    }
+
+    public function tempatWisataKhusus()
+    {
+        return $this->hasMany(TempatWisata::class, 'id', 'id');
+    }
+
+    public function tempatWisataUser()
+    {
+        return $this->hasMany(TempatWisata::class, 'id', 'id');
     }
 }

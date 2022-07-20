@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class KriteriaUmumJarak extends Model
 {
     use HasFactory;
+
+    public function jarakTempatWisata()
+    {
+        return $this->belongsTo(KriteriaUmumJarak::class, 'id', 'id');
+    }
+    
 }
