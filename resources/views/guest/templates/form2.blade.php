@@ -12,45 +12,45 @@
           <label for="jarak" class="form-label">Jarak Ke Tempat Wisata : </label>
           <select class="form-select" style="color: black" name="jarak" id="jarak">
             <option disabled>Seberapa jauh jarak ke tempat wisata yang anda inginkan</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
+            <option value="1">dekat</option>
+            <option value="2" selected>sedang</option>
+            <option value="3">jauh</option>
           </select>
           <br>
 
           <label for="areaParkir" class="form-label">Area Parkir : </label>
           <select class="form-select" style="color: black" name="areaParkir" id="areaParkir">
             <option disabled>Bagaimana area parkir yang anda perlukan</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
+            <option value="1">tidak ada area parkir</option>
+            <option value="2" selected>bisa parkir sepede motor</option>
+            <option value="3">bisa parkir mobil</option>
           </select>
           <br>
 
           <label for="kriteriaKhusus1" class="form-label">{{ $a }} : </label>
           <select class="form-select" style="color: black" name="kriteriaKhusus1" id="kriteriaKhusus1">
             <option disabled>Seberapa perlu kriteria ini bagi anda</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
+            <option value="1">kurang penting</option>
+            <option value="2" selected>mungking penting</option>
+            <option value="3">sangat penting</option>
           </select>
           <br>
 
           <label for="kriteriaKhusus2" class="form-label">{{ $b }} : </label>
           <select class="form-select" style="color: black" name="kriteriaKhusus2" id="kriteriaKhusus2">
             <option disabled>Seberapa perlu kriteria ini bagi anda</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
+            <option value="1">kurang penting</option>
+            <option value="2" selected>mungking penting</option>
+            <option value="3">sangat penting</option>
           </select>
           <br>
 
           <label for="kriteriaKhusus3" class="form-label">{{ $c }} : </label>
           <select class="form-select" style="color: black" name="kriteriaKhusus3" id="kriteriaKhusus3">
             <option disabled>Seberapa perlu kriteria ini bagi anda</option>
-            <option value="1">1</option>
-            <option value="2" selected>2</option>
-            <option value="3">3</option>
+            <option value="1">kurang penting</option>
+            <option value="2" selected>mungking penting</option>
+            <option value="3">sangat penting</option>
           </select>
           <br>
 

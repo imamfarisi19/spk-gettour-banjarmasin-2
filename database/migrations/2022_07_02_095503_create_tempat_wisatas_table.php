@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->boolean('isAktif');
-            $table->string('linkInternet');
+            $table->text('linkInternet');
             $table->integer('kategoriWisataId');
             $table->integer('kelurahanId');
             $table->double('latitude');

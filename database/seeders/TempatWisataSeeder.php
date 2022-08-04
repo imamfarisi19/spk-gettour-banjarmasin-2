@@ -60,14 +60,14 @@ class TempatWisataSeeder extends Seeder
 
         DB::table('tempat_wisatas')->insert([
             //4
-            'nama' => 'Gereja Indonesia Banjarmasin',
+            'nama' => 'Gereja Betel Indonesia Banjarmasin',
             'isAktif' => true,
-            'linkInternet' => 'https://www.google.co.id/maps/place/Gereja+indonesia+Banjarmasin/@-3.3178653,114.5752465,17z/data=!3m1!4b1!4m5!3m4!1s0x2de423335da76821:0xe265bb5b57f6f289!8m2!3d-3.3178707!4d114.5774353',
+            'linkInternet' => 'https://www.google.com/maps/place/Gereja+Bethel+Indonesia+R.k.+Ilir+Jemaat+Anugrah/@-3.3326341,114.581586,17z/data=!3m1!4b1!4m5!3m4!1s0x2de4216260e68e01:0xd7fa6c2972580f16!8m2!3d-3.3326522!4d114.5860363',
             'kategoriWisataId' => 13,
-            'kelurahanId' => 33,
+            'kelurahanId' => 15,
             'latitude' => -3.3178586502910500,
             'longitude' => 114.5774365410840000,
-            'deskripsi' => 'Alamat: MHJG+VX3, Tlk. Dalam, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan 70116',
+            'deskripsi' => 'Gereja Bethel Indonesia R.K Ilir merupakan salah satu gereja di Kota Banjarmasin. Gereja ini menyediakan tempat ibadah ummat ummat kristiani untuk ibadah rutin minggu pagi - sore - malam, ibadah misa, Paskah, kamis putih, baptis (pembaptisan), Natal hingga Jumat Agung. Gereja Bethel Indonesia R.K Ilir memiliki ciri khas bangunan yang sejuk dengan sejarah gereja di Kota Banjarmasin yang kuat sehingga menjadi tempat ibadah bagi ummat Kristen Kota Banjarmasin.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -81,7 +81,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 22,
             'latitude' => -3.3154928060083900,
             'longitude' => 114.5908723601220000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Kalimantan (Bahasa Inggris) (Kalimantan Evangelical Church) ialah sebuah kelompok gereja Kristen Protestan di Indonesia yang didirikan pada tanggal 10 April 1839, awalnya dengan nama Gereja Dayak Evangelis (GDE). Gereja ini melakukan pelayanan iman kepada suku-suku di pulau Kalimantan yaitu suku-suku yang termasuk ke dalam rumpun suku Dayak, meski begitu GKE tidak tertutup bagi anggota non-Dayak. Gereja ini berkantor pusat di kota Banjarmasin, provinsi Kalimantan Selatan. Indonesia.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -95,7 +95,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 28,
             'latitude' => -3.3200244613952000,
             'longitude' => 114.6006001496770000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Paroki Hati Yesus Yang Maha Kudus Veteran adalah sebuah paroki dari Gereja Katolik Roma di Keuskupan Banjarmasin; berpusat di Jalan Veteran di Kota Banjarmasin - Propinsi Kalimantan Selatan. Para pastor yang pernah berkarya di Paroki Veteran antara lain dari ordo Misionaris Keluarga Kudus (MSF) dan Kongregasi Pasionis (CP)',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -109,7 +109,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 24,
             'latitude' => -3.3246291390368400,
             'longitude' => 114.5906601674690000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Gereja Katedral Keluarga Kudus Banjarmasin merupakan salah satu gereja di Kota Banjarmasin. Gereja ini menyediakan tempat ibadah ummat ummat kristiani untuk ibadah rutin minggu pagi - sore - malam, ibadah misa, Paskah, kamis putih, baptis (pembaptisan), Natal hingga Jumat Agung. Gereja Katedral Keluarga Kudus Banjarmasin memiliki ciri khas bangunan yang sejuk dengan sejarah gereja di Kota Banjarmasin yang kuat sehingga menjadi tempat ibadah bagi ummat Kristen Kota Banjarmasin.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -123,7 +123,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 33,
             'latitude' => -3.3126853060256200,
             'longitude' => 114.5741773429300000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Gereja Kalimantan Evangelis (disingkat GKE) atau Gereja Evangelikal di Kalimantan (Bahasa Inggris) (Kalimantan Evangelical Church) ialah sebuah kelompok gereja Kristen Protestan di Indonesia yang didirikan pada tanggal 10 April 1839, awalnya dengan nama Gereja Dayak Evangelis (GDE). Gereja ini melakukan pelayanan iman kepada suku-suku di pulau Kalimantan yaitu suku-suku yang termasuk ke dalam rumpun suku Dayak, meski begitu GKE tidak tertutup bagi anggota non-Dayak. Gereja ini berkantor pusat di kota Banjarmasin, provinsi Kalimantan Selatan. Indonesia.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -137,7 +137,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 33,
             'latitude' => -3.3133485723737000,
             'longitude' => 114.5723215361830000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Gereja HKBP Banjarmasin merupakan salah satu gereja di Kota Banjarmasin. Gereja ini menyediakan tempat ibadah ummat ummat kristiani untuk ibadah rutin minggu pagi - sore - malam, ibadah misa, Paskah, kamis putih, baptis (pembaptisan), Natal hingga Jumat Agung. Gereja HKBP Banjarmasin memiliki ciri khas bangunan yang sejuk dengan sejarah gereja di Kota Banjarmasin yang kuat sehingga menjadi tempat ibadah bagi ummat Kristen Kota Banjarmasin.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -151,49 +151,49 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 23,
             'latitude' => -3.3200538047109300,
             'longitude' => 114.5950379496770000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Gereja Yesus Sejati Banjarmasin merupakan salah satu gereja di Kota Banjarmasin. Gereja ini menyediakan tempat ibadah ummat ummat kristiani untuk ibadah rutin minggu pagi - sore - malam, ibadah misa, Paskah, kamis putih, baptis (pembaptisan), Natal hingga Jumat Agung. Gereja Yesus Sejati Banjarmasin memiliki ciri khas bangunan yang sejuk dengan sejarah gereja di Kota Banjarmasin yang kuat sehingga menjadi tempat ibadah bagi ummat Kristen Kota Banjarmasin.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
         DB::table('tempat_wisatas')->insert([
             //11
-            'nama' => 'GBI Kingdom of God Banjarmasin',
+            'nama' => 'Gereja Pantekosta Indonesia',
             'isAktif' => true,
-            'linkInternet' => 'https://www.google.co.id/maps/place/GBI+Kingdom+of+God+Banjarmasin/@-3.3200056,114.5908108,17z/data=!4m5!3m4!1s0x2de423e81decd85b:0xa2719730b534ee27!8m2!3d-3.3208863!4d114.5950768',
+            'linkInternet' => 'https://www.google.com/maps/place/Gereja+Pantekosta+di+Indonesia+(GPdI)+Kota+Banjarmasin/@-3.3302541,114.5800736,12.44z/data=!4m9!1m2!2m1!1sGereja+Pantekosta+di+Indonesia!3m5!1s0x2de423c29f323bab:0xf7eadf0de6e64f6f!8m2!3d-3.320348!4d114.5949843!15sCh5HZXJlamEgUGFudGVrb3N0YSBkaSBJbmRvbmVzaWGSAQZjaHVyY2g',
             'kategoriWisataId' => 13,
             'kelurahanId' => 23,
-            'latitude' => -3.3208865613852500,
-            'longitude' => 114.5950749496770000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'latitude' => -3.3203338625938623,
+            'longitude' => 114.59498359255569,
+            'deskripsi' => 'Gereja Pantekosta di Indonesia (disingkat GPdI) merupakan salah satu lembaga Gereja Kristen di Indonesia yang mempercayai Allah yang Esa, Allah Tri-Tunggal, dalam namaNya yang berkuasa, nama Allah Bapa , Allah Anak dan Roh Kudus yaitu TUHAN Yesus Kristus. GPdI percaya dan menantikan kedatangan Tuhan Yesus Kristus kedua kali, bukan sebagai bayi seperti pada peristiwa Natal, namun sebagai Raja di atas segala raja. Penggunaan nama ini merupakan sebagai pengganti nama Vereeniging De Pinkstergemeente in Nederlandsch Oost Indie. Aliran ini merupakan salah satu denominasi Pantekosta terbesar di Indonesia.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
         DB::table('tempat_wisatas')->insert([
             //12
-            'nama' => 'GBI Pak Niko Banjarmasin',
+            'nama' => 'Gereja Katolik St. Perawan Maria Yang Terkandung Tanpa Noda',
             'isAktif' => true,
             'linkInternet' => 'https://www.google.co.id/maps/place/GBI+Pak+Niko+Banjarmasin/@-3.3210536,114.5927747,17z/data=!3m1!4b1!4m5!3m4!1s0x2de423c2a3ef0bf9:0x17042fd0228b6196!8m2!3d-3.3210609!4d114.5949566',
             'kategoriWisataId' => 13,
-            'kelurahanId' => 23,
-            'latitude' => -3.3210562836788100,
-            'longitude' => 114.5949526208410000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'kelurahanId' => 11,
+            'latitude' => -3.331868340066398,
+            'longitude' => 114.59194336370979,
+            'deskripsi' => 'Gereja Santa Perawan Maria Yang Terkandung Tanpa Noda - Paroki Kelayan merupakan Paroki Gereja Katolik Roma di Keuskupan Banjarmasin; terletak di Kelurahan Kelayan Barat, Kecamatan Banjarmasin Selatan, Kota Banjarmasin, Kalimantan Selatan. Pada 5 November 1939, Mgr. J. Kusters, Prefek Apostolik Banjarmasin memberkati gereja di Kelayan, dan tanggal 11 November 1939 Paroki Kelayan didirikan dengan batas antar kedua Paroki di Banjarmasin (dengan Paroki Katedral Keluarga Kudus) adalah Sungai Martapura.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
         DB::table('tempat_wisatas')->insert([
             //13
-            'nama' => 'Gereja HKBP Banjarmasin',
+            'nama' => 'HKBP Borneo Res. Banjarmasin',
             'isAktif' => true,
-            'linkInternet' => 'https://www.google.co.id/maps/place/Gereja+HKBP+Banjarmasin/@-3.3236698,114.587698,17z/data=!3m1!4b1!4m5!3m4!1s0x2de423dc7e932e15:0x21fc99114044b46a!8m2!3d-3.3237433!4d114.5898587',
+            'linkInternet' => 'https://www.google.com/maps/place/HKBP+Borneo+Res.+Banjarmasin/@-3.3105981,114.57481,18.33z/data=!4m9!1m2!2m1!1sgereja+indonesia+banjarmasin!3m5!1s0x2de42358a0897d5b:0x5f82a108c5fce657!8m2!3d-3.310327!4d114.5751514!15sChxnZXJlamEgaW5kb25lc2lhIGJhbmphcm1hc2luWh4iHGdlcmVqYSBpbmRvbmVzaWEgYmFuamFybWFzaW6SAQZjaHVyY2iaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUkpkamMyZDJKQkVBRQ',
             'kategoriWisataId' => 13,
-            'kelurahanId' => 24,
-            'latitude' => -3.3237455306186800,
-            'longitude' => 114.5898565849650000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'kelurahanId' => 2,
+            'latitude' => -3.3103090384768983,
+            'longitude' => 114.57513999261465,
+            'deskripsi' => 'HKBP Borneo Res. Banjarmasin (Gereja) terletak di Kota Banjar Baru, Kalimantan Selatan, Indonesia. Daerah atau landmark terdekat adalah Banjarmasin Barat. Alamat HKBP Borneo Res. Banjarmasin adalah Belitung Selatan, Banjarmasin Barat, Kota Banjarmasin, Kalimantan Selatan 70128, Indonesia. HKBP Borneo Res.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -207,7 +207,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 31,
             'latitude' => -3.3141010880922200,
             'longitude' => 114.5984209270540000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Kota Banjarmasin Kalimantan Selatan memiliki beragam destinasi wisata menarik yang bisa kamu kunjungi saat liburan. Dan salah satu yang bisa kamu nikmati adalah wisata kulinernya. Bagi kamu yang suka lontong, bakal suka lihat informasi ini. Kota Banjarmasin juga terkenal dengan wisata kuliner Lontong Orari. Jadi, selain berburu kuliner Soto Banjar, ada baiknya kamu coba sarapan atau makan siang lontong ini. Lontong Orari terkenal dengan enak dan gurihnya. Banyak warga yang rutin datang kemari untuk makan siang, sarapan, atau makan malam. Datang lebih awal untuk mendapatkan bagian badan ikan haruan. Kalau kebagian kepala dan ekor, kamu bisa minta dobel ikannya. Selain lontong ada nasi kuning di rumah makan ini.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -221,7 +221,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 23,
             'latitude' => -3.3177045239812300,
             'longitude' => 114.5943968153290000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Warung makanan dengan khas nuansa banjar serta ornamen dan ruangan bahari sangat pas untuk makan bersama. Warung ini menyediakan berbagai macam menu makanan khas Banjarmasin, seperti sop banjar, nasi kuning haruan, soto banjar, dll. Selain itu tempatnya juga sangat nyaman dan cocok untuk makan bersama keluarga, teman maupun kerabat.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -235,7 +235,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 34,
             'latitude' => -3.3043763875374000,
             'longitude' => 114.6132254509260000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Soto daging yang enaaakk banget di daerah muara karang, lengkap dengan acar, emping, dan perkedel kentang. Jangan lupa pake sambel yang banyak dan jeruk nipis biar nampol pedes asem2 seger dan gurih. Extra in kerupuk putih, mereka sedia lho.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -249,7 +249,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 51,
             'latitude' => -3.3011923505798200,
             'longitude' => 114.5896588496750000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Depot Sari Patin yang terletak di Jalan Brigjend H Hasan Basri No.53, Sungai Miai, Kecamatan Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan dikenal sebagai salah satu rumah makan yang menyediakan kuliner khas Banjar.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -263,7 +263,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 8,
             'latitude' => -3.3274233078807800,
             'longitude' => 114.5895224823000000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Rumah Makan Sambal Acan Raja Banjar (ARB) dirintis Aulia Abdi bersama isteri tercintanya, Gina Puspita Dewi di tahun 2014. Diawali dengan menjual sambal acan bikinan isterinya secara online. Modal awal hanya Rp 100.000.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -277,7 +277,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 29,
             'latitude' => -3.3045591735872100,
             'longitude' => 114.5882271225730000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Pemerintahan Kota Banjarmasin terus mengembangkan sejumlah tempat menjadi kawasan wisata. Baru-baru ini, kembali diresmikan satu destinasi yakni Arabian Food yang terletak di Jl. Antasan Kecil Barat atau biasa dikenal dengan nama Kampung Arab. Seperti diketahui, sejak dulu Kampung Arab sudah ada dan dikenal oleh masyarakat luas. Keberadaan Kampung Arab ini menjadi salah satu kekhasan Banjarmasin yang bisa berpotensi dikembangkan menjadi kawasan wisata dan perekonomian warga.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -291,7 +291,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 43,
             'latitude' => -3.2847263360131500,
             'longitude' => 114.5896742674550000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Mie Bancir merupakan sajian kuliner khas masyarakat Banjar dengan bahan utama  mie kuning. Sedangkan bumbu dasar yang digunakan untuk membuat kuahnya kurang lebih sama dengan bahan untuk membuat hidangan Sop/Soto Banjar dengan ditambah saus tomat khas Banjar.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -305,7 +305,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 34,
             'latitude' => -3.3083871335681000,
             'longitude' => 114.6192609643780000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Destinasi wisata terakhir yang tidak boleh Anda lewatkan ketika berkunjung ke Banjarmasin yaitu Waterboom Banua Anyar. Objek wisata yang berada di kawasan Benua Anyar ini menawarkan berbagai wahana seru untuk para pengunjungnya. Di sini Anda bisa puas bermain air bersama keluarga, karena berbagai fasilitasnya yang begitu menunjang seperti sewa peralatan renang, kolam anak, water slide, wahana permainan air, dan banyak lagi lainnya.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -319,7 +319,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 15,
             'latitude' => -3.3395709036366500,
             'longitude' => 114.5884279496790000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Wisata kolam renang permainan semakin bermunculan di Kota Banjarmasin, Provinsi Kalimantan Selatan. Tidak hanya di tengah kota, di pinggiran pun juga ada, seperti Alfin Waterboom. Walau berada di pemukiman padat, lokasinya di Jalan Tembus Mantuil, Kelurahan Kelayan Selatan, Kecamatan Banjarmasin Selatan, ini banyak dikunjungi masyarakat.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -333,7 +333,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 43,
             'latitude' => -3.2798105331001600,
             'longitude' => 114.5763661643530000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Beragam tempat wisata di Kalimantan Selatan bisa dikunjungi bersama keluarga, termasuk objek wisata airnya. Salah satu pilihan wisata air di Banjarmasin yang seru dan cocok untuk seluruh keluarga adalah Borneo Mini Waterpark.Lokasinya cukup mudah dijangkau yaitu di Jalan AMD Raya, HKSN, Banjarmasin Utara, Kota Banjarmasin, Kalimantan Selatan. Tempat wisata ini cocok untuk seluruh keluarga, apalagi jika cuaca tengah panas tentunya bermain air dan berenang akan sangat menyegarkan.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -347,7 +347,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 32,
             'latitude' => -3.3264789446046900,
             'longitude' => 114.6034472803230000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Kolam Renang Gelanggang Remaja merupakan salah satu kolam renang yang berada di kompleks Gelanggang Olahraga (GOR) Hasanuddin HM, Kota Banjarmasin. Kolam renang berada di ujung kompleks di wilayah Jalan Pangeran Antasari RT 13 Kelurahan Sungai Baru, Banjarmasin Tengah, Banjarmasin, Kalimantan Selatan. Kolam renang diresmikan bertepatan dengan GOR Hasanuddin HM pada 10 November 1975 oleh Menteri Dalam Negeri Amir Mahmud.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -361,7 +361,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 22,
             'latitude' => -3.3150443177046500,
             'longitude' => 114.5925079285310000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Pembangunan Taman Siring 0 KM merupakan bagian dari revitalisasi Kota Pusaka Banjarmasin yang bertemakan Kota Sungai sebagai front city yang dibangun pada 2016, oleh Ditjen Cipta Karya melalui Satker Penataan Bangunan Lingkungan Bidang Cipta Karya Provinsi Kalimantan Selatan. Taman Siring 0 KM terletak di tengah Kota Banjarmasin dan berada disekitar Pasar terapung Kota, 20 km dari Bandara Syamsuddin Noor apabila minggu tiba kawasan ini menjadi area car free dayjuga menjadi tempat berkumpulnya komunitas-komunitas yang memanfaatkan hari libur untuk berkumpul dan berlatih seperti komunitas parkour dan skateboard memanfaatkan jumping area yang memang disediakan untuk olahraga tersebut. Pengunjung juga terlihat memanfaatkan fasilitas taman seperti batu reflexy atau duduk duduk gazebo sambil menikmati jajanan di sekitar taman.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -375,7 +375,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 25,
             'latitude' => -3.3221063613711700,
             'longitude' => 114.5872058674680000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Taman Kamboja, Taman Wisata Favorit Dilengkapi Wahana Permainan di Banjarmasin by Dara Mendra Taman Kamboja, Taman Wisata Favorit Dilengkapi Wahana Permainan di Banjarmasin Harga Tiket: -, Jam Operasional: 24 Jam, Alamat: Kertak Baru Ulu, Kec. Banjarmasin Tengah, Kota Banjarmasin, Kalimantan Selatan; Map: Cek Lokasi Taman Kamboja Banjarmasin atau lebih dikenal dengan nama RTH oleh warga sekitar ini merupakan sebuah taman yang menyediakan banyak fasilitas permainan untuk anak-anak. Taman ini dulunya merupakan kompleks kuburan pada zaman Belanda namun oleh pemerintah setempat berhasil mengubahnya menjadi tempat rekreasi.RTH merupakan taman yang berlokasi di pusat Kota Banjarmasin. Banyak sekali warga yang melakukan aktivitas di dalam taman tersebut. Dari orang dewasa yang bermain bersama anak-anaknya hingga para muda mudi yang berdua bersama pasangan atau teman mereka duduk bersantai di bawah pohon.Taman Kamboja tidak hanya menawarkan wahana permainan saja. Namun, terdapat air mancur dengan beragam warna yang bisa disaksikan di tengah taman. Keindahan dari air mancur ini akan membuat siapa saja yang melihatnya akan terpikat dengan keindahan dari beragam warna yang dihasilkan olehnya.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -389,7 +389,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 29,
             'latitude' => -3.3048549886528300,
             'longitude' => 114.5882396109840000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Taman Bungas atau lebih tepatnya taman yang berukuran mini kira-kira berukuran 4x10 meter. Letaknya tidak jauh dari gedung Menara Pandang, taman ini terletak di Jalan Pierre Tendean Banjarmasin, Kalsel.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -403,7 +403,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 28,
             'latitude' => -3.3240460683993900,
             'longitude' => 114.6023150508240000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Taman Edukasi Baiman merupakan taman mini yang terletak di Jalan A Yani Km 2, Kota Banjarmasin, Kalsel, tepat di samping pintu masuk Duta Mall. Panjang ini sekira 40 meter dengan lapisan beton di lantainya dan terdapat bola terbuat dari beton berfungsi sebagai pagar.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -417,7 +417,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 23,
             'latitude' => -3.3195063985214100,
             'longitude' => 114.5934329351540000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Taman Siring merupakan salah satu destinasi wisata Banjarmasin yang cukup terkenal. Taman yang terletak di Jalan Kapten Pierre Tendean, Banjarmasin, Kalimantan Selatan ini menjadi salah satu destinasi wisata yang wajib dikunjungi, bahkan tak sedikit pengunjung yang menghabiskan waktunya bersama keluarga, pasangan, atau teman menikmati keindahan Taman Siring. Taman Siring biasanya ramai pada pukul 17.00 hingga 24.00 WITA, suasananya yang sejuk karena banyak ditumbuhi pohon-pohon rindang membuat siapapun betah berlama-lama disana.  Belum lagi keindahan yang ditawarkan seperti Sungai Martapura dan kota Banjarmasin mampu menarik hati siapa saja. Dengan hal itulah mengapa Siring begitu digemari menjadi salah satu daftar tujuan destinasi wisata Banjarmasin.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
@@ -431,7 +431,7 @@ class TempatWisataSeeder extends Seeder
             'kelurahanId' => 22,
             'latitude' => -3.3200629859885000,
             'longitude' => 114.5919063937980000,
-            'deskripsi' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            'deskripsi' => 'Hampir setiap hari saat sorenya terlebih jika akhir pekan halaman Masjid Raya Sabilal Muhtadin Banjarmasin menjadi tempat sejumlah warga menikmati suasana dibulan Ramadhan. Ada yang duduk di bawah pohon rindang, berjalan memutari halaman masjid, dan banyak juga berfoto selfi serta berbagai aktivitas warga lainnya.',
             'created_at' => now(),
             'updated_at' => now(),
         ]);
