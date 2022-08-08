@@ -15,8 +15,7 @@ return new class extends Migration
     {
         Schema::create('kriteria_umum_jaraks', function (Blueprint $table) {
             $table->id();
-            $table->integer('tempatWisataId');
-            $table->integer('kecamatanId');
+            $table->foreignId('tempat_wisata_id');
             $table->double('bobot');
             $table->timestamps();
         });

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('kriteria_khususes', function (Blueprint $table) {
             $table->id();
-            $table->integer('tempatWisataId');
+            $table->foreignId('tempat_wisata_id');
             $table->double('kriteriaKhusus1');
             $table->double('kriteriaKhusus2');
             $table->double('kriteriaKhusus3');

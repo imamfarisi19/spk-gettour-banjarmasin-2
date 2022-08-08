@@ -25,9 +25,16 @@ Route::get('/login', [AdminController::class, 'login'])->name('login');
 Route::post('/postLogin', [AdminController::class, 'postLogin'])->name('postLogin');
 Route::get('/logout', [AdminController::class, 'logout'])->name('logout');
 Route::get('/kecamatan', [AdminController::class, 'kecamatan'])->name('kecamatan');
-Route::get('/coba1', [AdminController::class, 'coba1'])->name('coba1');
 
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/adminBeranda', [AdminController::class, 'index'])->name('adminBeranda');
-    Route::post('/tempatWisata', [AdminController::class, 'tempatWisata'])->name('tempatWisata');
+    // Route::get('/adminBeranda', [AdminController::class, 'index'])->name('adminBeranda');
+    // Route::post('/tempatWisata', [AdminController::class, 'tempatWisata'])->name('tempatWisata');
+
+    Route::get('/kecamatan', [AdminController::class, 'index'])->name('kecamatan');       
+    Route::post('/tambahKecamatan', [AdminController::class, 'tambahKecamatan'])->name('tambahKecamatan');
+    Route::get('/ubahKecamatan/{id}', [AdminController::class, 'ubahKecamatan'])->name('ubahKecamatan');
+    Route::post('/updateKecamatan/{id}', [AdminController::class, 'updateKecamatan'])->name('updateKecamatan');
+    Route::get('/hapusKecamatan/{id}', [AdminController::class, 'destroy'])->name('hapusKecamatan');
+
+    Route::get('/kelurahan', [AdminController::class, 'kelurahan'])->name('kelurahan');
 });

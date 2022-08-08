@@ -17,7 +17,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
     {
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //1
-            'kategoriWisataId' => '1',
+            'kategori_wisata_id' => '1',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -27,7 +27,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //2
-            'kategoriWisataId' => '1',
+            'kategori_wisata_id' => '1',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -37,7 +37,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //3
-            'kategoriWisataId' => '1',
+            'kategori_wisata_id' => '1',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -47,7 +47,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //4
-            'kategoriWisataId' => '2',
+            'kategori_wisata_id' => '2',
             'penjelasan' => 'Harga Murah Dan Bersih',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -57,7 +57,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //5
-            'kategoriWisataId' => '2',
+            'kategori_wisata_id' => '2',
             'penjelasan' =>'Spot Photo',
             'isBenefit'=>true,
             'bobot'=>1,
@@ -67,7 +67,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //6
-            'kategoriWisataId' => '2',
+            'kategori_wisata_id' => '2',
             'penjelasan' =>'Hiburan Khas Banjar',
             'isBenefit'=>true,
             'bobot'=>1,
@@ -77,7 +77,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //7
-            'kategoriWisataId' => '2',
+            'kategori_wisata_id' => '2',
             'penjelasan' => 'Pemandangan Sekitar',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -87,7 +87,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //8
-            'kategoriWisataId' => '3',
+            'kategori_wisata_id' => '3',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -97,7 +97,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //9
-            'kategoriWisataId' => '3',
+            'kategori_wisata_id' => '3',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -107,7 +107,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //10
-            'kategoriWisataId' => '3',
+            'kategori_wisata_id' => '3',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -117,7 +117,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //11
-            'kategoriWisataId' => '4',
+            'kategori_wisata_id' => '4',
             'penjelasan' => 'Kebersihan',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -127,7 +127,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
         
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //12
-            'kategoriWisataId' => '4',
+            'kategori_wisata_id' => '4',
             'penjelasan' => 'Keamanan Alat Permainan',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -137,7 +137,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //13
-            'kategoriWisataId' => '4',
+            'kategori_wisata_id' => '4',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -147,7 +147,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //14
-            'kategoriWisataId' => '5',
+            'kategori_wisata_id' => '5',
             'penjelasan' => 'Alat Bermain',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -157,7 +157,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //15
-            'kategoriWisataId' => '5',
+            'kategori_wisata_id' => '5',
             'penjelasan' => 'Nilai Sejarah',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -167,7 +167,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //16
-            'kategoriWisataId' => '5',
+            'kategori_wisata_id' => '5',
             'penjelasan' => 'Wisata air',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -177,7 +177,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //17
-            'kategoriWisataId' => '5',
+            'kategori_wisata_id' => '5',
             'penjelasan' => 'Kebersihan dan Keamanan',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -187,7 +187,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //18
-            'kategoriWisataId' => '6',
+            'kategori_wisata_id' => '6',
             'penjelasan' => 'Memiliki Restoran',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -197,7 +197,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //19
-            'kategoriWisataId' => '6',
+            'kategori_wisata_id' => '6',
             'penjelasan' => 'Keamanan Wahana Bagi Pengunjung',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -207,7 +207,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //20
-            'kategoriWisataId' => '6',
+            'kategori_wisata_id' => '6',
             'penjelasan' => 'Kebersihan',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -217,7 +217,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //21
-            'kategoriWisataId' => '7',
+            'kategori_wisata_id' => '7',
             'penjelasan' => 'Kajian Rutin',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -227,7 +227,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //22
-            'kategoriWisataId' => '7',
+            'kategori_wisata_id' => '7',
             'penjelasan' => 'Nilai Sejarah',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -237,7 +237,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //23
-            'kategoriWisataId' => '7',
+            'kategori_wisata_id' => '7',
             'penjelasan' => 'Memiliki Taman',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -247,7 +247,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //24
-            'kategoriWisataId' => '7',
+            'kategori_wisata_id' => '7',
             'penjelasan' => 'Kebersihan dan Keamanan',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -257,7 +257,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //25
-            'kategoriWisataId' => '9',
+            'kategori_wisata_id' => '9',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -267,7 +267,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //26
-            'kategoriWisataId' => '9',
+            'kategori_wisata_id' => '9',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -277,7 +277,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //27
-            'kategoriWisataId' => '9',
+            'kategori_wisata_id' => '9',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -287,7 +287,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //28
-            'kategoriWisataId' => '10',
+            'kategori_wisata_id' => '10',
             'penjelasan' => 'Model Pakaian Terbaru',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -297,7 +297,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //29
-            'kategoriWisataId' => '10',
+            'kategori_wisata_id' => '10',
             'penjelasan' => 'Memiliki Tempat Ganti Baju',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -307,7 +307,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //30
-            'kategoriWisataId' => '10',
+            'kategori_wisata_id' => '10',
             'penjelasan' => 'Kebersihan dan Keamanan',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -317,7 +317,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //31
-            'kategoriWisataId' => '11',
+            'kategori_wisata_id' => '11',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -327,7 +327,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //32
-            'kategoriWisataId' => '11',
+            'kategori_wisata_id' => '11',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -337,7 +337,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //33
-            'kategoriWisataId' => '11',
+            'kategori_wisata_id' => '11',
             'penjelasan' => null,
             'isBenefit'=>null,
             'bobot'=>null,
@@ -347,7 +347,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //34
-            'kategoriWisataId' => '12',
+            'kategori_wisata_id' => '12',
             'penjelasan' => 'Cepat Saji',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -357,7 +357,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //35
-            'kategoriWisataId' => '12',
+            'kategori_wisata_id' => '12',
             'penjelasan' => 'Memiliki Menu Terkenal',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -367,7 +367,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //36
-            'kategoriWisataId' => '12',
+            'kategori_wisata_id' => '12',
             'penjelasan' => 'Kebersihan dan Keamanan',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -377,7 +377,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //37
-            'kategoriWisataId' => '13',
+            'kategori_wisata_id' => '13',
             'penjelasan' => 'Memiliki Tokoh',
             'isBenefit'=>true,
             'bobot'=>1,
@@ -387,7 +387,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //38
-            'kategoriWisataId' => '13',
+            'kategori_wisata_id' => '13',
             'penjelasan' => 'Nilai Sejarah',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -397,7 +397,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //39
-            'kategoriWisataId' => '13',
+            'kategori_wisata_id' => '13',
             'penjelasan' => 'Kebersihan dan Keamanan',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -407,7 +407,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //40
-            'kategoriWisataId' => '14',
+            'kategori_wisata_id' => '14',
             'penjelasan' => 'Cepat Saji',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -417,7 +417,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //41
-            'kategoriWisataId' => '14',
+            'kategori_wisata_id' => '14',
             'penjelasan' => 'Memiliki Menu Terkenal',
             'isBenefit'=>true,
             'bobot'=>1,
@@ -427,7 +427,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //42
-            'kategoriWisataId' => '14',
+            'kategori_wisata_id' => '14',
             'penjelasan' => 'Kebersihan dan Keamanan',
             'isBenefit'=>true,
             'bobot'=>3,
@@ -437,7 +437,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //43
-            'kategoriWisataId' => '15',
+            'kategori_wisata_id' => '15',
             'penjelasan' => 'Macam - macam wahana permainan',
             'isBenefit'=>true,
             'bobot'=>2,
@@ -447,7 +447,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //44
-            'kategoriWisataId' => '15',
+            'kategori_wisata_id' => '15',
             'penjelasan' => 'Nilai Sejarah',
             'isBenefit'=>true,
             'bobot'=>1,
@@ -457,7 +457,7 @@ class KriteriaTambahanUntukSawSeeder extends Seeder
 
         DB::table('kriteria_tambahan_untuk_saws')->insert([
             //45
-            'kategoriWisataId' => '15',
+            'kategori_wisata_id' => '15',
             'penjelasan' => 'Kebersihan dan Keamanan',
             'isBenefit'=>true,
             'bobot'=>3,

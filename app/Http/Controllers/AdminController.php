@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use App\Models\TempatWisata;
+use App\Models\Kelurahan;
+use App\Models\Kecamatan;
 
 class AdminController extends Controller
 {
@@ -16,12 +18,10 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $s = DB::select('select * from tempat_wisatas');
-        $k = DB::select('select * from kecamatans');
-        $w = DB::select('select * from kategori_wisatas');
-        $r = DB::select('select * from kelurahans');
+        $kelurahan = Kelurahan::with('kecamatan')->get();
+        $kecamatan = Kecamatan::with('kelurahan')->get();
 
-        return view('admin.berandaAdmin', ['s' => $s, 'k' => $k, 'w' => $w, 'r' => $r]);
+        return view('admin.kecamatan', ['kelurahan' => $kelurahan, 'kecamatan' => $kecamatan]);
     }
 
     /**
@@ -87,7 +87,11 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        dd($id);
+        $kec = Kecamatan::findorfail($id);
+        $kec->delete();
+
+        return back();
     }
 
     public function login()
@@ -98,7 +102,7 @@ class AdminController extends Controller
     public function postLogin(Request $request)
     {
         if (Auth::attempt($request->only('email', 'password'))) {
-            return redirect('/adminBeranda');
+            return redirect('/kecamatan');
         } else {
             return back();
         }
@@ -116,14 +120,55 @@ class AdminController extends Controller
         $k = DB::select('select * from kecamatans');
         $w = DB::select('select * from kategori_wisatas');
         $r = DB::select('select * from kelurahans');
-        
-        $t = DB::insert('insert into tempat_wisatas (id, nama, isAktif, linkInternet, kategoriWisataId, kelurahanId, latitude, longitude, deskripsi) values (?, ?, ?, ?, ?, ?, ?, ?, ?)', [51, $request->tempatWisataNama, true, $request->tempatWisataLink, $request->tempatWisataKategori, $request->tempatWisataKelurahan, $request->tempatWisataLatitude, $request->tempatWisataLongitude, $request->tempatWisataDeskripsi]);
+
+        $t = DB::insert('insert into tempat_wisatas (id, nama, isAktif, linkInternet, kategori_wisata_d, kelurahan_id, latitude, longitude, deskripsi) values (?, ?, ?, ?, ?, ?, ?, ?, ?)', [51, $request->tempatWisataNama, true, $request->tempatWisataLink, $request->tempatWisataKategori, $request->tempatWisataKelurahan, $request->tempatWisataLatitude, $request->tempatWisataLongitude, $request->tempatWisataDeskripsi]);
         return view('admin.berandaAdmin', ['s' => $s, 'k' => $k, 'w' => $w, 'r' => $r]);
     }
 
-    public function coba1()
+    public function kecamatan()
     {
-        $x = TempatWisata::all();
-        return $x;
+        $kelurahan = Kelurahan::with('kecamatan')->get();
+        $kecamatan = Kecamatan::with('kelurahan')->get();
+
+        return view('admin.kecamatan', ['kelurahan' => $kelurahan, 'kecamatan' => $kecamatan]);
+    }
+
+    public function tambahKecamatan(Request $request)
+    {
+        Kecamatan::create([
+            'nama' => $request->kecamatanNama,
+            'latitude' => $request->kecamatanLatitude,
+            'longitude' => $request->kecamatanLongitude,
+            'create_at' => now(),
+            'updated_at' => now(),
+        ]);
+        return redirect('kecamatan');
+    }
+
+    public function ubahKecamatan($id)
+    {
+        $kec = Kecamatan::findorfail($id);
+        $kecamatan = Kecamatan::with('kelurahan')->get();
+
+        return view('admin.kecamatanEdit', ['kec' => $kec, 'kecamatan' => $kecamatan]);
+    }
+
+    public function updateKecamatan(Request $request, $id)
+    {
+        $kec = Kecamatan::findorfail($id);
+        $kecamatan = Kecamatan::with('kelurahan')->get();
+        $kec->update($request->all());
+
+        return redirect('kecamatan');
+    }
+
+    public function hapusKecamatan($id)
+    {
+        dd($id);
+        $kec = Kecamatan::findorfail($id);
+        $kecamatan = Kecamatan::with('kelurahan')->get();
+        $kec->delete();
+
+        return view('admin.kecamatan');
     }
 }

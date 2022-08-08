@@ -9,8 +9,14 @@ class kriteriaKhusus extends Model
 {
     use HasFactory;
 
-    public function khususTempatWisata()
+    protected $table = "kriteria_khususes";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'id', 'tempat_wisata_id', 'kriteriaKhusus1', 'kriteriaKhusus2', 'kriteriaKhusus3', 'created_at', 'updated_at'
+    ];
+
+    public function tempatWisata()
     {
-        return $this->belongsToMany(kriteriaKhusus::class, 'tempatWisataId', 'id');
+        return $this->belongsTo(TempatWisata::class);
     }
 }

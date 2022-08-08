@@ -9,9 +9,14 @@ class KriteriaUmumJarak extends Model
 {
     use HasFactory;
 
-    public function jarakTempatWisata()
+    protected $table = "kriteria_umum_jaraks";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'id', 'tempat_wisata_id', 'kelurahan_id', 'bobot', 'created_at', 'updated_at'
+    ];
+
+    public function tempatWisata()
     {
-        return $this->belongsTo(KriteriaUmumJarak::class, 'id', 'id');
+        return $this->belongsTo(TempatWisata::class);
     }
-    
 }

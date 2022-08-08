@@ -18,11 +18,12 @@ return new class extends Migration
             $table->string('nama');
             $table->boolean('isAktif');
             $table->text('linkInternet');
-            $table->integer('kategoriWisataId');
-            $table->integer('kelurahanId');
+            $table->foreignId('kategori_wisata_id');
+            $table->foreignId('kelurahan_id');
             $table->double('latitude');
             $table->double('longitude');
             $table->text('deskripsi');
+            $table->foreignId('user_id');
             $table->timestamps();
         });
     }

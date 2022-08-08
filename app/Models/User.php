@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'level',
     ];
 
     /**
@@ -42,8 +43,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function userTempatWisata()
+    public function tempatWisata()
     {
-        return $this->hasMany(TempatWisata::class, 'id', 'id');
+        return $this->hasMany(TempatWisata::class);
     }
 }

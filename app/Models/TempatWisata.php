@@ -9,33 +9,40 @@ class TempatWisata extends Model
 {
     use HasFactory;
 
-    public function tempatWisataKelurahan()
+    protected $table = "tempat_wisatas";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'id', 'nama', 'isAktif', 'linkInternet', 'kategori_wisata_id', 'kelurahan_id', 'latitude', 'longitude', 'deskripsi', 'user_id', 'created_at', 'updated_at'
+    ];
+
+    public function kelurahan()
     {
-        return $this->hasMany(TempatWisata::class, 'kelurahanId', 'id');
+        return $this->belongsTo(Kelurahan::class);
     }
 
-    public function tempatWisataKategori()
+    public function kriteriaKhusus()
     {
-        return $this->hasMany(TempatWisata::class, 'KategoriWisataId', 'id');
+        return $this->hasOne(KriteriaKhusus::class);
     }
 
-    public function tempatWisataJarak()
+    public function kriteriaUmumAreaParkir()
     {
-        return $this->hasOne(TempateWisata::class, 'id', 'id');
+        return $this->hasOne(KriteriaUmumAreaParkir::class);
     }
 
-    public function tempatWisataParkir()
+    public function kriteriaUmumJarak()
     {
-        return $this->hasOne(TempatWisata::class, 'id', 'id');
+        return $this->hasOne(KriteriaUmumJarak::class);
     }
 
-    public function tempatWisataKhusus()
+    public function kategoriWisata()
     {
-        return $this->hasMany(TempatWisata::class, 'id', 'id');
+        return $this->belongsTo(KategoriWisata::class);
     }
 
-    public function tempatWisataUser()
+    public function user()
     {
-        return $this->hasMany(TempatWisata::class, 'id', 'id');
+        return $this->belongsTo(user::class);
     }
+
 }

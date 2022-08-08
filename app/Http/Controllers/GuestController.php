@@ -43,43 +43,43 @@ class GuestController extends Controller
             for ($i = 0; $i < 150; $i++) {
                 if ($i >= 0 && $i < 30) {
                     if ($arrD[$i] < 2) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 1, 1, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 1, now(), now()]);
                     } else if ($arrD[$i] >= 2 && $arrD[$i] < 5) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 1, 2, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 1, now(), now()]);
                     } else {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 1, 3, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 1, now(), now()]);
                     }
                 } else if ($i >= 30 && $i < 60) {
                     if ($arrD[$i] < 2) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 2, 1, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 2, now(), now()]);
                     } else if ($arrD[$i] >= 2 && $arrD[$i] < 5) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 2, 2, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 2, now(), now()]);
                     } else {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 2, 3, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 2, now(), now()]);
                     }
                 } else if ($i >= 60 && $i < 90) {
                     if ($arrD[$i] < 2) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 3, 1, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 3, now(), now()]);
                     } else if ($arrD[$i] >= 2 && $arrD[$i] < 5) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 3, 2, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 3, now(), now()]);
                     } else {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 3, 3, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 3, now(), now()]);
                     }
                 } else if ($i >= 90 && $i < 120) {
                     if ($arrD[$i] < 2) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 4, 1, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 4, now(), now()]);
                     } else if ($arrD[$i] >= 2 && $arrD[$i] < 5) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 4, 2, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 4, now(), now()]);
                     } else {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 4, 3, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 4, now(), now()]);
                     }
                 } else {
                     if ($arrD[$i] < 2) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 5, 1, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 5, now(), now()]);
                     } else if ($arrD[$i] >= 2 && $arrD[$i] < 5) {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 5, 2, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 5, now(), now()]);
                     } else {
-                        DB::insert('insert into kriteria_umum_jaraks (tempatWisataId, kecamatanId, bobot, created_at, updated_at) values (?, ?, ?, ?, ?)', [$arrI[$i], 5, 3, now(), now()]);
+                        DB::insert('insert into kriteria_umum_jaraks (tempat_wisata_id, bobot, created_at, updated_at) values (?, ?, ?, ?)', [$arrI[$i], 5, now(), now()]);
                     }
                 }
             }

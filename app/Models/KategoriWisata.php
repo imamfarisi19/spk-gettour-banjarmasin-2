@@ -9,13 +9,13 @@ class KategoriWisata extends Model
 {
     use HasFactory;
 
-    public function kategoriWisataTempatWisata()
-    {
-        return $this->belongsToMany(KategoriWisata::class, 'id', 'id');
-    }
+    protected $table = "kategori_wisatas";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'id', 'nama', 'linkDirect', 'isAktif', 'created_at', 'updated_at'];
 
-    public function kategoriKriteriaTambahan()
+    public function tempatWisata()
     {
-        return $this->belongsTo(KategoriWisata::class, 'id', 'id');
+        return $this->hasMany(KategoriWisata::class);
     }
 }

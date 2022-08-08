@@ -48,12 +48,12 @@
                                 @endif
                                 <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;">{{$value->linkInternet}}</td>
                                 @foreach($w as $valueW)
-                                @if ($value->kategoriWisataId == $valueW->id)
+                                @if ($value->kategori_wisata_id == $valueW->id)
                                 <td>{{$valueW->nama}}</td>
                                 @endif
                                 @endforeach
                                 @foreach($r as $valueR)
-                                @if ($value->kelurahanId == $valueR->id)
+                                @if ($value->kelurahan_id == $valueR->id)
                                 <td>{{$valueR->nama}}</td>
                                 @endif
                                 @endforeach

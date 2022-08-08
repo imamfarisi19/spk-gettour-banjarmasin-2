@@ -9,8 +9,14 @@ class KriteriaUmumAreaParkir extends Model
 {
     use HasFactory;
 
-    public function parkirTempatWisata()
+    protected $table = "kriteria_umum_area_parkirs";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'id', 'tempat_wisata_id', 'bobot', 'created_at', 'updated_at'
+    ];
+
+    public function tempatWisata()
     {
-        return $this->belongsTo(KriteriaUmumAreaParkir::class, 'id', 'id');
+        return $this->belongsTo(TempatWisata::class);
     }
 }

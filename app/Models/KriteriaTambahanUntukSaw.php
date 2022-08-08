@@ -9,8 +9,14 @@ class KriteriaTambahanUntukSaw extends Model
 {
     use HasFactory;
 
-    public function kriteriaTambahanKategori()
+    protected $table = "kriteria_umum_tambahan_untuk_saws";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'id', 'kategori_wisata_id', 'penjelasan', 'isBenefit', 'bobot', 'created_at', 'updated_at'
+    ];
+
+    public function kategoriWisata()
     {
-        return $this->belongsTo(KriteriaTambahanUntukSaw::class, 'kategoriWisataId', 'id');
+        return $this->belongsTo(kategoriWisata::class);
     }
 }

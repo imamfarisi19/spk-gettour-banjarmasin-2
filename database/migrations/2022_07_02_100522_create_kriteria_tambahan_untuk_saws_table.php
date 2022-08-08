@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('kriteria_tambahan_untuk_saws', function (Blueprint $table) {
             $table->id();
-            $table->integer('kategoriWisataId');
+            $table->foreignId('kategori_wisata_id');
             $table->string('penjelasan')->nullable();
             $table->boolean('isBenefit')->nullable();
             $table->double('bobot')->nullable();

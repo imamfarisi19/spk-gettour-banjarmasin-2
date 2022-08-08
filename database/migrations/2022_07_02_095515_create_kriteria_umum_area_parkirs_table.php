@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('kriteria_umum_area_parkirs', function (Blueprint $table) {
             $table->id();
-            $table->integer('tempatWisataId');
+            $table->foreignId('tempat_wisata_id');
             $table->double('bobot');
             $table->timestamps();
         });
