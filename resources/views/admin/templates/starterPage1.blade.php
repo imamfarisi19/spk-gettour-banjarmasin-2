@@ -38,9 +38,9 @@
                                 <td>{{$val->latitude}}</td>
                                 <td>{{$val->longitude}}</td>
                                 <td>
-                                    <a href="{{ url('ubahKecamatan', $val->id) }}"><i class="fas fa-edit"></i></a>
+                                    <a href="{{ url('ubahKecamatan',$val->id) }}"><i class="fas fa-edit"></i></a>
                                     |
-                                    <a href="{{ url('hapusKecamatan', $val->id) }}"><i class="fas fa-trash-alt" style="color:red"></i></a>
+                                    <a href="{{ url('hapusKecamatan',$val->id) }}"><i class="fas fa-trash-alt" style="color:red"></i></a>
                                 </td>
                             </tr>
                             @endforeach

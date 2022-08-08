@@ -87,11 +87,7 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        dd($id);
-        $kec = Kecamatan::findorfail($id);
-        $kec->delete();
-
-        return back();
+        //
     }
 
     public function login()
